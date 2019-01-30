@@ -1,43 +1,14 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="UTF-8">
-  <title>HomeWork Unit 1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
-  <style>
-  .dot {
-  height: 300px;
-  width: 300px;
-  /* background-color:; */
-  border-radius: 50%;
-  display: inline-block;
-  border:10px solid rgb(93, 62, 231);
-  border-radius: 500px;
-}
-
-#get-jams{
-  background-color: rgb(29, 185, 29);
-  height: 50px;
-  width: 150px;
-  border-radius: 50%;
-  border: 5px solid rgb(93, 62, 231);
-}
-#pic-retake{
-  background-color: rgb(177, 219, 78);
-  height: 50px;
-  width: 100px;
-  border-radius:20%;
-  border: 2px solid red;
-}
-.section{
-  text-align: center;
-}
-h1{
-  color: rgb(29, 185, 29);
-}
-  </style>
 
 
 </head>
@@ -54,19 +25,33 @@ h1{
         <h1>FACE JAMZ</h1>
     </div>
 
-    <div class="container">
-        <video id="video" width="290" height="290" autoplay></video>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-1" style='text-align: center;'>Camera Test</h1>
         
+        <video id="video" width="640" height="480" autoplay></video>
+       
+        <canvas id="canvas" class='hidden' width="640" height="480"></canvas>
+        <div id='responseTextArea'></div>
+      </div>
     </div>
 
   <div class="section">
     <div>
-      <button type="submit" id="get-jams" class="btn btn-primary">Get Jams</button>
+      <button type="submit" id="snap" class="btn btn-primary get-jams">Get Jams</button>
     </div>
     <div>
-      <button type="submit" id="pic-retake" class="btn btn-secondary">Retake Picture</button>
+      <button type="submit" id="redo" class="btn btn-secondary pic-retake">Retake Picture</button>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"></script>
+<script type='text/javascript' src='lib/cameraface.js'></script>
 
 </body>
 
