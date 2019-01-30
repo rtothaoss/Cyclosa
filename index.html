@@ -5,41 +5,68 @@
   <meta charset="UTF-8">
   <title>HomeWork Unit 1</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  
+  <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+  <style>
+  .dot {
+  height: 300px;
+  width: 300px;
+  /* background-color:; */
+  border-radius: 50%;
+  display: inline-block;
+  border:10px solid rgb(93, 62, 231);
+  border-radius: 500px;
+}
+
+#get-jams{
+  background-color: rgb(29, 185, 29);
+  height: 50px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid rgb(93, 62, 231);
+}
+#pic-retake{
+  background-color: rgb(177, 219, 78);
+  height: 50px;
+  width: 100px;
+  border-radius:20%;
+  border: 2px solid red;
+}
+.section{
+  text-align: center;
+}
+h1{
+  color: rgb(29, 185, 29);
+}
+  </style>
+
+
 </head>
 
 <body>
+   <!-- Line background features -->
+   <script>bubbly({
+      colorStart: "#4c004c",
+      colorStop: "#1a001a",
+      bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+  });</script>
 
-  <header>
-    <p>header</p>
-  </header>
+    <div style="text-align:center">
+        <h1>FACE JAMZ</h1>
+    </div>
 
-  <nav>
-    <p>nav</p>
-  </nav>
+    <div class="container">
+        <video id="video" width="290" height="290" autoplay></video>
+        
+    </div>
 
-  <section>
-    <heading>
-      <p>section</p>
-    </heading>
-    <article>
-      <heading>article</heading>
-      <h1>h1, h2, h3</h1>
-      <p>p</p>
-    </article>
-  </section>
-
-  <aside>
-    <heading>
-      <p>aside</p>
-    </heading>
-  </aside>
-
-  <div class="clear"></div>
-
-  <footer>
-    <p>footer</p>
-  </footer>
+  <div class="section">
+    <div>
+      <button type="submit" id="get-jams" class="btn btn-primary">Get Jams</button>
+    </div>
+    <div>
+      <button type="submit" id="pic-retake" class="btn btn-secondary">Retake Picture</button>
+    </div>
+  </div>
 
 </body>
 
