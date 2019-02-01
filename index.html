@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
 
@@ -14,27 +16,27 @@
 </head>
 
 <body>
-   <!-- Line background features -->
-   <script>bubbly({
+  <!-- Line background features -->
+  <script>bubbly({
       colorStart: "#4c004c",
       colorStop: "#1a001a",
       bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
-  });</script>
+    });</script>
 
-    <div style="text-align:center">
-        <h1>FACE JAMZ</h1>
-    </div>
+  <div style="text-align:center">
+    <h1>FACE JAMZ</h1>
+  </div>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-1" style='text-align: center;'>Camera Test</h1>
-        
-        <video id="video" width="640" height="480" autoplay></video>
-       
-        <canvas id="canvas" class='hidden' width="640" height="480"></canvas>
-        <div id='responseTextArea'></div>
-      </div>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-1" style='text-align: center;'>Camera Test</h1>
+
+      <video id="video" width="640" height="480" autoplay></video>
+
+      <canvas id="canvas" class='hidden' width="640" height="480"></canvas>
+      <div id='responseTextArea'></div>
     </div>
+  </div>
 
   <div class="section">
     <div>
@@ -45,14 +47,25 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-  crossorigin="anonymous"></script>
-<script type='text/javascript' src='lib/cameraface.js'></script>
-<script type='text/javascript' src='lib/spotify.js'></script>
+  <div class="player">
+    <img src="http://www.myiconfinder.com/uploads/iconsets/64-64-89af7b4ffd9da82f7d707ccc6dd49578.png"
+      alt="play">
+    <button class="btn" id='play'></button>
+    <img src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png"
+      alt="fastForward">
+    <button class="btn" id='ff'></button>
+    <img src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png"
+      alt="rewind">
+    <button class="btn" id='rewind'></button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script type='text/javascript' src='lib/cameraface.js'></script>
+  <script type='text/javascript' src='lib/spotify.js'></script>
 
 </body>
 
