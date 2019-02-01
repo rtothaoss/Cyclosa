@@ -21,7 +21,8 @@ https://azure.microsoft.com/en-us/services/cognitive-services/face/
 Spotify 
 https://developer.spotify.com/documentation/web-api/
 
-
+Project Proposal:
+https://docs.google.com/document/d/1u5XeiFJX7x6LDKD03jV9GWAW2OXlsFqkD0c-orR3KgU/edit?usp=sharing
 
 Breakdown of Tasks:
 Replicate how we do our homework and create a index.html, style.css, app.js, and images folder.
