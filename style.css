@@ -16,6 +16,7 @@ video,
 canvas {
   display: block;
   margin: 0 auto;
+  /* border: 2px solid white; */
 }
 
 .dot {
@@ -46,16 +47,34 @@ canvas {
   text-align: center;
 }
 h1{
-  color: rgb(29, 185, 29);
+  color: rgb(153, 136, 212);
 }
 
 .jumbotron {
   background-color: rgba(255, 255, 255, 0);
+  padding: 0 0;
+  text-align: center;
 }
 
 #responseTextArea {
   color: white;
+
 }
 .player{
   align-content: center;
+}
+
+#albumImageDiv,
+#artist,
+#songTitle,
+#albumTitle {
+  color: white;
+  padding-top: 10px;
+}
+
+
+
+.display-2 {
+  color: rgb(153, 136, 212);
+  padding-top: 20px;
 }
