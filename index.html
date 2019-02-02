@@ -26,45 +26,52 @@
       bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
     });</script>
 
-  <div style="text-align:center">
-    <h1>FACE JAMZ</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+      <h1 class="display-2">Face Jam</h1>
+    </div>
   </div>
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-1" style='text-align: center;'>Camera Test</h1>
+      <!-- <h1 class="display-1" style='text-align: center;'>Camera Test</h1> -->
 
       <video id="video" width="640" height="480" autoplay></video>
 
       <canvas id="canvas" class='hidden' width="640" height="480"></canvas>
+
       <div id='responseTextArea'></div>
     </div>
   </div>
 
-  <div class="section">
-    <div>
-      <button type="submit" id="snap" class="btn btn-primary get-jams">Get Jams</button>
-    </div>
-    <div>
-      <button type="submit" id="redo" class="btn btn-secondary pic-retake">Retake Picture</button>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div>
+        <button type="submit" id="snap" class="btn btn-primary get-jams">Get Jams</button>
+      </div>
+      <div>
+        <button type="submit" id="redo" class="btn btn-secondary pic-retake">Retake Picture</button>
+      </div>
     </div>
   </div>
 
-  <div id='albumImageDiv'></div>
-  <div id='artist'></div>
-  <div id='songTitle'></div>
-  <div id='albumTitle'></div>
-
-  <div class="player">
-    <img src="http://www.myiconfinder.com/uploads/iconsets/64-64-89af7b4ffd9da82f7d707ccc6dd49578.png"
-      alt="play">
-    <button class="btn" id='play'></button>
-    <img src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png"
-      alt="fastForward">
-    <button class="btn" id='next'></button>
-    <img src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png"
-      alt="rewind">
-    <button class="btn" id='rewind'></button>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div id='albumImageDiv'></div>
+      <div id='artist'></div>
+      <div id='songTitle'></div>
+      <div id='albumTitle'></div>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <img id='play' src="http://www.myiconfinder.com/uploads/iconsets/64-64-89af7b4ffd9da82f7d707ccc6dd49578.png" alt="play">
+      <!-- <button class="btn" id='play'></button> -->
+      <!-- <img id='previous' src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png" alt="fastForward"> -->
+      <!-- <button class="btn" id='previous'></button> -->
+      <img id='next' src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png" alt="rewind">
+      <!-- <button class="btn" id='next'></button> -->
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
@@ -72,7 +79,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
   <script type='text/javascript' src='lib/cameraface.js'></script>
   <script type='text/javascript' src='lib/spotify.js'></script>
 
