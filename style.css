@@ -19,15 +19,8 @@ canvas {
   /* border: 2px solid white; */
 }
 
-.dot {
-  height: 300px;
-  width: 300px;
-  /* background-color:; */
-  border-radius: 50%;
-  display: inline-block;
-  border:10px solid rgb(93, 62, 231);
-  border-radius: 500px;
-}
+
+
 
 .get-jams{
   background-color: rgb(29, 185, 29);
@@ -37,11 +30,12 @@ canvas {
   border: 5px solid rgb(93, 62, 231);
 }
 .pic-retake{
-  background-color: rgb(177, 219, 78);
   height: 50px;
-  width: 100px;
-  border-radius:20%;
-  border: 2px solid red;
+  width: 50px;
+  background-color:red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10px;
 }
 .section{
   text-align: center;
