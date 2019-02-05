@@ -27,15 +27,113 @@
       bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
     });</script>
 
+<a href="https://rtothaoss.github.io/Cyclosa/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">< Back to Face Jams Main Page</a>
 
 
-
-<h1 class="title" align="center"><a target="_top" href=""><img src="https://blog.flamingtext.com/blog/2019/02/02/flamingtext_com_1549133138_139635756.png"
-      border="0" alt="" title="Logo"></a>
+<h1>
+        Spotify API
 </h1>
 
-<!----------ADD STUFF ABOUT -->
 
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" align= center>
+        <img class="d-block w-80" src="C:\Users\Olinda\Downloads\Cyclosa-master (1)\Cyclosa-master\images\audiofeatures.PNG" alt="Audio Features and Analysis">
+      </div>
+      <div class="carousel-item" align= center>
+        <img class="d-block w-80" src="Cyclosa-master/images/playback.PNG" alt="Playback">
+      </div>
+      <div class="carousel-item" align= center>
+        <img class="d-block w-80" src="Cyclosa-master/images/curatedcontent.png" alt="Curated Content">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<style>
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        color: rgb(153, 136, 212);
+        font-style: italic;
+      }
+      </style>
+    <h1>
+        Face++ API
+    </h1>
+
+  <div class="accordion" style="width: 80%;margin-left: 10%;" >
+ 
+  <div class="accordion" id="accordionCard">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Face++ Detect API
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionCard">
+      <div class="card-body">
+            <p>Overview</p>
+            <p>Detect and analyze human faces within the image that you provided.</p>
+            
+            <p>Detect API can detect all the faces within the image. Each detected face gets its face_token, which can be used in follow-up analysis and operations. With a Standard API Key, you can specify a rectangle area within the image to perform face detection.</p>
+            
+            <p>Detect API can analyze detected faces directly, providing face landmarks and attributes information. With a Free API Key, only the 5 largest faces by its bounding box size can be analyzed, while you can use Face Analyze API to analyze the rest faces. With a Standard API Key, you can analyze all the detected faces.</p>
+            
+            <p>About face_token
+            If you want to use the detected face for follow-up operations, we recommend you to add its corresponding face_token into FaceSet. A face_token expires within 72 hours if it is not added into any FaceSet. </p>
+            
+            Every time you operate face detection upon one image, the face within the image will get a different face_token.</p>
+            
+            <p>Image Requirements
+            Format : JPG (JPEG), PNG
+            Size : between 48*48 and 4096*4096 (pixels)
+            File size : no larger than 2MB
+            Minimal size of face : the bounding box of a detected face is a square. The minimal side length of a square should be no less than 1/48 of the short side of image, and no less than 48 pixels. For example if the size of image is 4096 * 3200px, the minimal size of face should be 66 * 66px.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Demo
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionCard">
+      <div class="card-body">
+            <img src="Cyclosa-master/images/facedemo.PNG" alt="face demo">
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Face Attributes
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionCard">
+      <div class="card-body">
+       <img src="Cyclosa-master/images/faceattributes.PNG" alt="face info">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
     
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
