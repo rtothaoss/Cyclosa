@@ -12,6 +12,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 
 
@@ -26,11 +29,35 @@
       bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
     });</script>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-      <h1 class="display-2">Face Jam</h1>
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active" href="https://www.spotify.com/us/account/overview/">Sign in to Spotify</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.spotify.com/us/premium/?checkout=false">Spotify Premium</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutApis.html">About the APIs</a>
+    </li>
+  </ul>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="title" align="center"><a target="_top" href=""><img src="https://blog.flamingtext.com/blog/2019/02/02/flamingtext_com_1549133138_139635756.png"
+            border="0" alt="" title="Logo"></a>
+      </h1>
     </div>
   </div>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container musicPtag">
+      <p>Music for your every mood.</p>
+    </div>
+  </div>
+
+
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -47,7 +74,7 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <div>
-        
+
         <button type="submit" id="snap" class="btn btn-primary get-jams">Get Jams</button>
       </div>
       <div>
@@ -57,6 +84,7 @@
     </div>
   </div>
 
+
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <div id='albumImageDiv'></div>
@@ -65,9 +93,12 @@
       <div id='albumTitle'></div>
     </div>
   </div>
+
+
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <img id='previous' src="http://www.myiconfinder.com/uploads/iconsets/64-64-cac5887ed93a9aacb624235fca1091aa.png" alt="previous">
+      <img id='previous' src="http://www.myiconfinder.com/uploads/iconsets/64-64-cac5887ed93a9aacb624235fca1091aa.png"
+        alt="previous">
       <img id='play' src="http://www.myiconfinder.com/uploads/iconsets/64-64-89af7b4ffd9da82f7d707ccc6dd49578.png" alt="play">
       <!-- <button class="btn" id='play'></button> -->
       <!-- <img id='previous' src="http://www.myiconfinder.com/uploads/iconsets/64-64-bb24400134a10e430ddc9f6fbe241c24.png" alt="fastForward"> -->
@@ -76,6 +107,16 @@
       <!-- <button class="btn" id='next'></button> -->
     </div>
   </div>
+
+
+  <div class="card" align=center, style="width:70%" align=center, style="width:70%">
+    <h5 class="card-title" align=center> Want More?</h5>
+    <img class="card-img-top" src="https://cdn.macrumors.com/article-new/2017/04/Screen-Shot-8-800x330.jpg?retina" alt="Card image cap">
+  </div>
+
+  <!-- <div class="footer">
+
+  </div> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
