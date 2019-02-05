@@ -48,6 +48,13 @@ body {
 
 }
 
+.card2  {
+  margin-left: 225px;
+  background-color: rgb(153, 136, 212);
+  font-size: 20px;
+  color: rgb(143, 29, 143);
+
+}
 video, 
 canvas {
   display: block;
