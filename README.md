@@ -2,6 +2,7 @@
 
 Project Title: Face Jam
 
+Deployed Page: https://rtothaoss.github.io/Cyclosa/
 
 Project Description: Facial recognition software that will detect your emotion and pick a spotify playlist based off of your current mood. 
 
