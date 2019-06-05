@@ -2,7 +2,7 @@
 
 Project Title: Face Jam
 
-![alt text](https://imgur.com/S07tMhw 'ross carmack facejam')
+![alt text](https://i.imgur.com/S07tMhw.png 'ross carmack facejam')
 
 Deployed Page: https://rtothaoss.github.io/Cyclosa/
 
