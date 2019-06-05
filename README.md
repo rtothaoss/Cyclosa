@@ -2,6 +2,8 @@
 
 Project Title: Face Jam
 
+![alt text](![alt text](https://i.imgur.com/UhlXsro.png 'ross carmack facejam')
+
 Deployed Page: https://rtothaoss.github.io/Cyclosa/
 
 Project Description: Facial recognition software that will detect your emotion and pick a spotify playlist based off of your current mood. 
