@@ -1,4 +1,4 @@
-# Facejam
+# Face Jam
 
 Project Title: Face Jam
 
